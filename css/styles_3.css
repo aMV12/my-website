@@ -1,0 +1,538 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 90%;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+header nav .profile {
+    display: flex;
+    align-items: center;
+}
+
+header nav .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header nav button {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+header .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header .hero .hero-text {
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+header .hero .hero-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+header .hero .hero-text p {
+    font-size: 20px;
+    margin: 10px 0 0;
+    font-style: italic;
+}
+
+.intro {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.intro .text h2 {
+    font-size: 32px;
+    margin: 0 0 20px;
+}
+
+.intro .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.intro .stats .stat {
+    text-align: center;
+}
+
+.intro .stats .stat h3 {
+    font-size: 48px;
+    color: #ff4b5c;
+    margin: 0;
+}
+
+.intro .stats .stat p {
+    margin: 10px 0 0;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.services .service {
+    text-align: center;
+    width: 30%;
+}
+
+.services .service img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.services .service h3 {
+    margin: 10px 0 10px;
+    font-size: 24px;
+}
+
+.services .service p {
+    margin: 0;
+}
+
+/* Секция образования */
+.education {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.education h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: 180%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#reviews {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#reviews h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input, .form-container textarea {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-container textarea {
+    resize: none;
+    height: 100px;
+}
+
+.form-container button {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f05555;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #d04e4e;
+}
+
+
+
+.contacts {
+    text-align: center;
+    /* margin-top: 50px; увеличиваем отступ сверху */
+  }
+  
+  .contacts h2 {
+    font-size: 2rem; /* увеличиваем размер текста */
+    margin-bottom: 20px; /* увеличиваем отступ снизу */
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 50px; /* увеличиваем размер иконок */
+    height: 50px; /* увеличиваем размер иконок */
+    margin: 0 15px; /* увеличиваем отступы между иконками */
+    background-size: cover;
+  }
+  
+  .whatsapp {
+    background-image: url('whatsapp.png'); /* замените на путь к вашему изображению для WhatsApp */
+  }
+  
+  .telegram {
+    background-image: url('telegram.png'); /* замените на путь к вашему изображению для Telegram */
+  }
+  
+  .instagram {
+    background-image: url('instagram.png'); /* замените на путь к вашему изображению для Instagram */
+  }
+
+  .footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+  }
+  
+  .footer-buttons {
+    margin-bottom: 10px;
+  }
+  
+  .footer-button {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+
+  .description-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .description-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .description-text {
+    max-width: 600px;
+  }
+  
+  .description-text h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .description-text p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+
+
+/* Адаптивные стили */
+
+@media (max-width: 1024px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    header nav .profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    header .hero .hero-text h1 {
+        font-size: 32px;
+    }
+
+    header .hero .hero-text p {
+        font-size: 16px;
+    }
+
+    .intro .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro .stats .stat {
+        margin-bottom: 20px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .service {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .swiper-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        padding: 5px;
+    }
+
+    header nav .profile img {
+        width: 25px;
+        height: 25px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    header nav button {
+        padding: 5px;
+    }
+
+    header .hero .hero-text h1 {
+        font-size: 24px;
+    }
+
+    header .hero .hero-text p {
+        font-size: 14px;
+    }
+
+    .intro .text h2 {
+        font-size: 20px;
+    }
+
+    .intro .stats .stat h3 {
+        font-size: 36px;
+    }
+
+    .services .service h3 {
+        font-size: 20px;
+    }
+
+    .review {
+        width: 45%;
+    }
+
+    #reviews h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .review p {
+        font-size: 14px;
+    }
+
+    .review h3 {
+        font-size: 16px;
+    }
+
+    .form-container input, .form-container textarea, .form-container button {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+    }
+
+    .form-container h2 {
+        font-size: 1.5em;
+    }
+
+    .contacts h2 {
+        font-size: 1.5rem;
+      }
+    
+      .icon {
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+      }
+    
+      .footer-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .footer-button {
+        margin: 5px 0;
+      }
+
+      .description-block {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .description-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    
+      .description-text h2 {
+        font-size: 1.3rem;
+      }
+    
+      .description-text p {
+        font-size: 0.9rem;
+      }
+}
