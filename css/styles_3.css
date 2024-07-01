@@ -162,7 +162,7 @@ header .hero .hero-text p {
     margin-bottom: 20px;
 }
 
-.swiper-container {
+/* .swiper-container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -176,6 +176,25 @@ header .hero .hero-text p {
 
 .swiper-slide img {
     width: 180%;
+    height: auto;
+    border-radius: 10px;
+} */
+
+.swiper-container {
+    width: 100%;
+    max-width: 100%; /* Максимальная ширина контейнера, настройте по вашему усмотрению */
+    margin: 0 auto;
+    padding-bottom: 40px;
+    overflow: hidden; /* Это предотвратит горизонтальный скроллинг */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: 100%; /* Ширина изображения будет равна ширине swiper-slide */
     height: auto;
     border-radius: 10px;
 }
@@ -429,8 +448,10 @@ header .hero .hero-text p {
         margin-bottom: 20px;
     }
 
-    .swiper-container {
-        width: 90%;
+    .swiper-slide img {
+        width: 200%; /* Ширина изображения будет равна ширине swiper-slide */
+        height: auto;
+        border-radius: 10px;
     }
 }
 
@@ -502,37 +523,45 @@ header .hero .hero-text p {
         font-size: 1.5rem;
       }
     
-      .icon {
+    .icon {
         width: 50px;
         height: 50px;
         margin: 0 10px;
       }
     
-      .footer-buttons {
+    .footer-buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
     
-      .footer-button {
+    .footer-button {
         margin: 5px 0;
       }
 
-      .description-block {
-        flex-direction: column;
-        text-align: center;
-      }
-    
-      .description-image {
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
-    
-      .description-text h2 {
-        font-size: 1.3rem;
-      }
-    
-      .description-text p {
-        font-size: 0.9rem;
-      }
+    .description-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .description-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .description-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .description-text p {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    header nav {
+        display: none;
+    }
 }
